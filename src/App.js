@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Data from './data'
-import BirdsList from './Components/BirdsList'
+import BirdsList from './Components/BirdsList/BirdsList'
 import './App.css';
 
 function App() {

@@ -1,0 +1,17 @@
+.bird_container {
+    margin: 3vh 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.699);
+    background-color: #fff;
+}
+
+.bird_container img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
-import Bird from './Bird'
+import Bird from '../Bird/Bird'
+import './BirdsList.css'
 
 const BirdsList = ({Data}) => {
     const birdData = Data.map((bird)=>{
@@ -10,7 +11,7 @@ const BirdsList = ({Data}) => {
         }
     })
     return (
-        <div>
+        <div className="birds_list_container">
             {birdData}
         </div>
     )
