@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Bird = () => {
+const Bird = ({birdName,image,description,location}) => {
     return (
         <div>
-            <h3>Bird Component</h3>
+            <img src={image}/>
+            <h4>{birdName}</h4>
+            <h4>{location}</h4>
+            <p>{description}</p>
         </div>
     )
 }

@@ -1,13 +1,17 @@
 import React from 'react'
 import Bird from './Bird'
 
-const BirdsList = () => {
+const BirdsList = ({Data}) => {
+    const birdData = Data.map((bird)=>{
+        {
+            return (
+                <Bird key={bird.id} {...bird}/>
+            )
+        }
+    })
     return (
         <div>
-            <h3>Birds List Component</h3>
-            <Bird/>
-            <Bird/>
-            <Bird/>
+            {birdData}
         </div>
     )
 }

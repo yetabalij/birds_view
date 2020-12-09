@@ -4,10 +4,11 @@ import BirdsList from './Components/BirdsList'
 import './App.css';
 
 function App() {
+  //const [Data, setData] = useState([])
   return (
     <div className="App">
       <h1>Birds View </h1>
-      <BirdsList/>
+      <BirdsList Data={Data}/>
     </div>
   );
 }
