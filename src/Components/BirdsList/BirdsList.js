@@ -2,8 +2,8 @@ import React from 'react'
 import Bird from '../Bird/Bird'
 import './BirdsList.css'
 
-const BirdsList = ({Data}) => {
-    const birdData = Data.map((bird)=>{
+const BirdsList = ({birdsData}) => {
+    const birdData = birdsData.map((bird)=>{
         {
             return (
                 <Bird key={bird.id} {...bird}/>
